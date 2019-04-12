@@ -1,5 +1,15 @@
 * {
-    color: silver;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+h1, h2 {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+}
+
+body {
+    background-image: url(../images/bground.png);
+    background-color: grey;
 }
 
 h1 {
@@ -9,19 +19,36 @@ h1 {
     margin-left: 120px;
     padding: 10px;
     color: white;
-    width: 205px;
+    width: 245px;
     height: 40px;
+}
+
+h2 {
+    color: cadetblue;
+    width: 930px;
+    border-bottom-style: solid;
+    border-bottom-color: #dddddd;
+    margin-left: 15px;
+    line-height: 250%;
 }
 
 nav {
     position: absolute;
-    left: 345px;
+    background-color: white;
+    left: 393px;
     margin-left: 0px;
-    width: 735px;
+    width: 695px;
+    height: 60px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 p {
-    float: right;
+    background-color: white;
+    line-height: 150%;
+    margin-left: 10px;
 }
 
 header {
@@ -29,46 +56,121 @@ header {
     width: 100%;
     height: 60px;
     border-bottom-style: solid;
-    border-bottom-color: grey;
+    border-bottom-color: #cccccc;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: #666666;
+    color: #808080;
+    border-top-style: solid;
+    border-top-color: cadetblue;
+    border-top-width: 8px;
+    text-align: center;
+    clear: both;
+    
 }
 
 a:link {
-    color: silver; 
-    background-color: transparent; 
     text-decoration: none;
-  }
-  
-a:visited {
-    color: silver;
-    background-color: transparent;
-    text-decoration: none;
-  }
+}
   
 a:hover {
-    color: grey;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-a:active {
     color: silver;
-    background-color: transparent;
+    background-color: white;
     text-decoration: underline;
+    opacity: 0.5;
   }
 
-#about-me {
-    clear: both;
-    width: 960px;
-}
-
-.click-here {
+li {
     margin-right: 5px;
     margin-left: 5px;
     padding-left: 5px;
+    float: right;
+    background-color: white;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+form {
+    width: 930px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="button"] {
+    background-color: cadetblue;
+    border: 0;
+    height: 40px;
+    width: 80px;
+    color: white;
+}
+input[type="button"]:hover {
+    background-color: rgb(140, 158, 160);
+    text-decoration: underline;
+}
+  
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -30px;
+}
+  
+.footer, .push {
+    height: 30px;
+  }
+
+.port-pic {
+    width: 120px;
+    height: 120px;
+    margin: 0px;
+}
+
+.my-pic {
+    float: left;
+    background-color: whitesmoke;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .click-border{
     border-left-style: solid;
     border-left-width: 1px;
-    border-left-color: lightgrey;
+    border-left-color: #777777;
+}
+
+.port-desc {
+    position: absolute;
+    top: 95px;
+    margin: 0;
+    background-color: cadetblue;
+    color: white;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    font-size: 75%;
+}
+
+.port-container {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.inside {
+    width: 960px;
+    background-color: white;
+    margin-left: 120px;
 }
