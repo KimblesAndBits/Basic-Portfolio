@@ -16,7 +16,6 @@ h1 {
     background-color: cadetblue;
     float: left;
     margin-top: 0px;
-    margin-left: 120px;
     padding: 10px;
     color: white;
     width: 245px;
@@ -33,11 +32,10 @@ h2 {
 }
 
 nav {
-    position: absolute;
-    background-color: white;
-    left: 393px;
+    position: relative;
+    float: right;
     margin-left: 0px;
-    width: 695px;
+    width: 245px;
     height: 60px;
 }
 
@@ -172,5 +170,6 @@ input[type="button"]:hover {
 .inside {
     width: 960px;
     background-color: white;
-    margin-left: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
